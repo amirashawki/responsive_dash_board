@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/all_expenses.dart';
-
+import 'package:responsive_dash_board/widgets/my_card_section.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -12,7 +12,7 @@ class DesktopLayout extends StatelessWidget {
       body: Row(
         children: [
           Expanded(
-            flex: 1,
+            flex: 2,
             child: CustomDrawer(),
           ),
           SizedBox(
@@ -22,11 +22,13 @@ class DesktopLayout extends StatelessWidget {
             flex: 3,
             child: AllExpenses(),
           ),
-          Expanded(
-              flex: 1,
-              child: SizedBox(
-                width: 200,
-              ))
+          SizedBox(
+            width: 24,
+          ),
+          Expanded(flex: 2, child: CardSection()),
+          SizedBox(
+            width: 24,
+          ),
         ],
       ),
     );

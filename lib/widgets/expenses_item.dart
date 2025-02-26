@@ -7,30 +7,34 @@ class ExpensesItem extends StatelessWidget {
   const ExpensesItem({super.key});
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      height: 200,
-      width: 180,
-      decoration: BoxDecoration(
-          color: Color(0xff4EB7F2), borderRadius: BorderRadius.circular(12)),
+    return Container(
+      decoration: ShapeDecoration(
+        shape: RoundedRectangleBorder(
+            side: BorderSide(width: 1, color: Color(0xFFF1F1F1)),
+            borderRadius: BorderRadius.circular(12)),
+        color: Colors.white,
+      ),
       child: Padding(
-        padding: const EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
                 SvgPicture.asset(Assets.imagesBalance),
-                Icon(Icons.arrow_left_outlined)
+                Transform.rotate(
+                  angle: 1.4434546,
+                  child: Icon(
+                    Icons.arrow_back_ios_new_outlined,
+                    color: Color(0xFF064061),
+                  ),
+                )
               ],
             ),
             SizedBox(
               height: 34,
             ),
-            Text(
-              'Balance',
-              style: AppStyles.styleSemiBold16(context)
-                  .copyWith(color: Colors.white),
-            ),
+            Text('Balance', style: AppStyles.styleSemiBold16(context)),
             SizedBox(
               height: 8,
             ),
@@ -41,11 +45,7 @@ class ExpensesItem extends StatelessWidget {
             SizedBox(
               height: 16,
             ),
-            Text(
-              r'$20,129',
-              style: AppStyles.styleSemiBold24(context)
-                  .copyWith(color: Colors.white),
-            )
+            Text(r'$20,129', style: AppStyles.styleSemiBold24(context))
           ],
         ),
       ),
