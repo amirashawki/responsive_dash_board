@@ -61,7 +61,7 @@ class QuickInvoiceSection extends StatelessWidget {
                           .copyWith(color: Color(0xFF4EB7F2)),
                     ),
                   ),
-                  CustomButton()
+                const  CustomButton()
                 ],
               )
             ],
