@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/models/expenses_item_model.dart';
+import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/widgets/expenses_item.dart';
 
 class ExpansesItemsListview extends StatelessWidget {
@@ -16,7 +18,13 @@ class ExpansesItemsListview extends StatelessWidget {
             itemBuilder: (BuildContext, index) {
               return Padding(
                 padding: const EdgeInsets.only(right: 12),
-                child: ExpensesItem(),
+                child: ExpensesItem(
+                  expensesItemModel: ExpensesItemModel(
+                      image: Assets.imagesAvatar1,
+                      title: 'Income',
+                      date: 'April 2022',
+                      price: r'$20,129'),
+                ),
               );
             }));
   }
