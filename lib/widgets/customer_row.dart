@@ -1,8 +1,6 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
-import 'package:responsive_dash_board/widgets/item.dart';
+import 'package:responsive_dash_board/widgets/custom_textfield.dart';
 
 class CustomerRow extends StatelessWidget {
   const CustomerRow({
@@ -33,13 +31,13 @@ class CustomerRow extends StatelessWidget {
         ),
         const Row(
           children: [
-            Item(
+            CustomTextfield(
               text: 'Type customer name',
             ),
             SizedBox(
               width: 16,
             ),
-            Item(
+            CustomTextfield(
               text: 'Type customer email',
             )
           ],
