@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/models/UserInfo_model.dart';
 import 'package:responsive_dash_board/models/drawer_model.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/widgets/User_Info_ListTile.dart';
@@ -16,9 +17,10 @@ class CustomDrawer extends StatelessWidget {
       child: Column(
         children: [
           UserInfoListTile(
-            title: 'Lekan Okeowo',
-            subtitle: 'demo@gmail.com',
-            image: Assets.imagesAvatar3,
+            userinfoModel: UserinfoModel(
+                title: 'Madrani Andi',
+                subtitle: 'Madraniadi20@gmail',
+                image: Assets.imagesAvatar1),
           ),
           // DrawerItemList(),
           // SizedBox(
