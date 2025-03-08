@@ -4,6 +4,7 @@ import 'package:responsive_dash_board/widgets/custom_button.dart';
 import 'package:responsive_dash_board/widgets/customer_row.dart';
 
 import 'package:responsive_dash_board/widgets/item_section.dart';
+import 'package:responsive_dash_board/widgets/latest_transaction.dart';
 import 'package:responsive_dash_board/widgets/quick_Invoice_header.dart';
 
 class QuickInvoiceSection extends StatelessWidget {
@@ -26,14 +27,8 @@ class QuickInvoiceSection extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Text(
-                'Latest Transaction',
-                style: AppStyles.styleMedium16(context),
-              ),
-              const SizedBox(
-                height: 12,
-              ),
-              // LatestTransaction(),
+              
+             const LatestTransaction(),
               const SizedBox(
                 height: 24,
               ),
