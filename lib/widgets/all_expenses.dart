@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
 
 import 'package:responsive_dash_board/widgets/expenses_section.dart';
 import 'package:responsive_dash_board/widgets/quick_%20Invoice_section.dart';
@@ -17,7 +16,7 @@ class AllExpenses extends StatelessWidget {
         SizedBox(
           height: 24,
         ),
-        // Expanded(child: QuickInvoiceSection())
+        QuickInvoiceSection()
       ],
     );
   }

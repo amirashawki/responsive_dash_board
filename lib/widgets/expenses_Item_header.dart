@@ -19,13 +19,13 @@ class ExpensesItemHeader extends StatelessWidget {
             width: 60,
             decoration: ShapeDecoration(
                 shape: const OvalBorder(),
-                color: backgroundImage ??const Color(0xFFFAFAFA)),
+                color: backgroundImage ?? const Color(0xFFFAFAFA)),
             child: Padding(
-              padding:const EdgeInsets.all(14),
+              padding: const EdgeInsets.all(14),
               child: SvgPicture.asset(
                 image,
                 colorFilter: ColorFilter.mode(
-                    colorImage ??const Color(0xff4EB7F2), BlendMode.srcIn),
+                    colorImage ?? const Color(0xff4EB7F2), BlendMode.srcIn),
               ),
             )),
         const Spacer(),

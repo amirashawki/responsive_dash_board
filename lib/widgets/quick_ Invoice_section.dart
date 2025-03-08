@@ -40,11 +40,11 @@ class QuickInvoiceSection extends StatelessWidget {
               const SizedBox(
                 height: 24,
               ),
-              // const CustomerRow(),
+              const CustomerRow(),
 
-              // const SizedBox(
-              //   height: 24,
-              // ),
+              const SizedBox(
+                height: 24,
+              ),
               const ItemSection(),
 
               const SizedBox(
@@ -61,7 +61,7 @@ class QuickInvoiceSection extends StatelessWidget {
                           .copyWith(color: Color(0xFF4EB7F2)),
                     ),
                   ),
-                const  CustomButton()
+                  const CustomButton()
                 ],
               )
             ],
