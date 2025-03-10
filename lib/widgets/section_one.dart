@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
-import 'package:responsive_dash_board/widgets/my_card.dart';
+
+import 'package:responsive_dash_board/widgets/section_one_mycard.dart';
 import 'package:responsive_dash_board/widgets/trans_item.dart';
 
 class SectionOne extends StatelessWidget {
@@ -19,19 +19,9 @@ class SectionOne extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(
-              height: 24,
-            ),
-            Text(
-              'My Card',
-              style: AppStyles.styleSemiBold20(context),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            const MyCard(),
-            const SizedBox(
-              height: 20,
+            const SectionOneMycard(),
+            const Divider(
+              height: 40,
             ),
             Row(
               children: [
