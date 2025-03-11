@@ -12,9 +12,7 @@ class AllExpensesQuickInvoiceSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        SizedBox(
-          height: 40,
-        ),
+     
         ExpensesSection(),
         SizedBox(
           height: 24,

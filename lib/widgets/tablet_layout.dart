@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/allExpenses_quickInvoice_section.dart';
+
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/widgets/my_card_section.dart';
+import 'package:responsive_dash_board/widgets/mobile_dashBoard_layout.dart';
 
 class TabletLayoutDashboard extends StatelessWidget {
   const TabletLayoutDashboard({super.key});
@@ -18,7 +18,10 @@ class TabletLayoutDashboard extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: MobileDashBoardLayout(),
+          child: Padding(
+            padding: EdgeInsets.only(top: 30),
+            child: MobileDashBoardLayout(),
+          ),
         ),
         SizedBox(
           width: 24,
