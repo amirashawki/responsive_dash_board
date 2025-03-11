@@ -46,8 +46,6 @@ class _SectionOneMycardState extends State<SectionOneMycard> {
         ListDotIndicator(
           currentPageIndex: currentPageIndex,
         ),
-       
-
       ],
     );
   }

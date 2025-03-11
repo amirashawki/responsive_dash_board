@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
 
 import 'package:responsive_dash_board/widgets/section_one_mycard.dart';
-import 'package:responsive_dash_board/widgets/trans_item.dart';
+
+import 'package:responsive_dash_board/widgets/transaction_history.dart';
 
 class SectionOne extends StatelessWidget {
   const SectionOne({
@@ -22,51 +22,9 @@ class SectionOne extends StatelessWidget {
             const SectionOneMycard(),
             const Divider(
               height: 40,
+              color: Color(0xffF1F1F1),
             ),
-            Row(
-              children: [
-                Text('Transaction History',
-                    style: AppStyles.styleSemiBold20(context)),
-                const Expanded(child: SizedBox()),
-                Text(
-                  'See all',
-                  style: AppStyles.styleMedium16(context)
-                      .copyWith(color: Color(0xFF4EB7F2)),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Text(
-              '13 April 2022',
-              style: AppStyles.styleMedium16(context)
-                  .copyWith(color: Color(0xFFAAAAAA)),
-            ),
-            const SizedBox(
-              height: 16,
-            ),
-            const TransItem(
-              text: 'Cash Withdrawal',
-              data: '13 Apr, 2022 ',
-              price: r'$20,129',
-            ),
-            const SizedBox(
-              height: 12,
-            ),
-            const TransItem(
-              text: 'Landing Page project',
-              data: '13 Apr, 2022 at 3:30 PM',
-              price: r'$2,000',
-            ),
-            const SizedBox(
-              height: 12,
-            ),
-            const TransItem(
-              text: 'Juni Mobile App project',
-              data: '13 Apr, 2022 at 3:30 PM',
-              price: r'$20,129',
-            ),
+            const TransactionHistory(),
           ],
         ),
       ),

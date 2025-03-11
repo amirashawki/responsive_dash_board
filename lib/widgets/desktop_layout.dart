@@ -26,9 +26,6 @@ class DesktopLayout extends StatelessWidget {
             width: 24,
           ),
           Expanded(child: CardSection()),
-          SizedBox(
-            width: 24,
-          ),
         ],
       ),
     );
