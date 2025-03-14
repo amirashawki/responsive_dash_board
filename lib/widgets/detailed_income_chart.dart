@@ -33,7 +33,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               radius: activeIndex == 0 ? 60 : 50,
               value: 40,
               showTitle: true,
-              titleStyle: AppStyles.styleMedium16(context)
+              titleStyle: AppStyles.styleMedium16
                   .copyWith(color: activeIndex == 0 ? null : Colors.white),
               title: activeIndex == 0 ? 'Design service' : '40%',
               titlePositionPercentageOffset: activeIndex == 0 ? 1.4 : null,
@@ -42,7 +42,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               radius: activeIndex == 1 ? 60 : 50,
               showTitle: true,
               value: 25,
-              titleStyle: AppStyles.styleMedium16(context)
+              titleStyle: AppStyles.styleMedium16
                   .copyWith(color: activeIndex == 1 ? null : Colors.white),
               title: activeIndex == 1 ? 'Design product' : '25%',
               titlePositionPercentageOffset: activeIndex == 1 ? 2.2 : null,
@@ -51,7 +51,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               radius: activeIndex == 2 ? 60 : 50,
               showTitle: true,
               value: 20,
-              titleStyle: AppStyles.styleMedium16(context)
+              titleStyle: AppStyles.styleMedium16
                   .copyWith(color: activeIndex == 2 ? null : Colors.white),
               title: activeIndex == 2 ? 'Product royalti' : '20%',
               titlePositionPercentageOffset: activeIndex == 2 ? 1.4 : null,
@@ -60,7 +60,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               radius: activeIndex == 3 ? 60 : 50,
               showTitle: true,
               value: 22,
-              titleStyle: AppStyles.styleMedium16(context)
+              titleStyle: AppStyles.styleMedium16
                   .copyWith(color: activeIndex == 3 ? null : Colors.white),
               title: activeIndex == 3 ? 'Other' : '22%',
               titlePositionPercentageOffset: activeIndex == 3 ? 1.5 : null,

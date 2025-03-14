@@ -2,15 +2,14 @@
 
 
 
-import 'dart:math';
+
 
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/widgets/Custom_Background_Container.dart';
 import 'package:responsive_dash_board/widgets/Income_section_body.dart';
 import 'package:responsive_dash_board/widgets/expenses_header.dart';
-import 'package:responsive_dash_board/widgets/in_come_details.dart';
-import 'package:responsive_dash_board/widgets/income_chart.dart';
+
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -44,7 +43,7 @@ class InComeHeader extends StatelessWidget {
       children: [
         Text(
           'Income',
-          style: AppStyles.styleSemiBold20(context),
+          style: AppStyles.styleSemiBold20,
         ),
         const RangeOptions()
       ],

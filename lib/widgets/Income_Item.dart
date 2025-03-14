@@ -26,7 +26,7 @@ class InComeItem extends StatelessWidget {
       ),
       trailing: Text(
         incomeItemModel.value,
-        style: AppStyles.styleSemiBold16(context),
+        style: AppStyles.styleSemiBold16,
       ),
     );
   }

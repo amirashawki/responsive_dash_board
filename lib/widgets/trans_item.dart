@@ -17,7 +17,7 @@ class TransItem extends StatelessWidget {
         child: ListTile(
           title: Text(
             transactionModel.text,
-            style: AppStyles.styleSemiBold16(context),
+            style: AppStyles.styleSemiBold16,
           ),
           subtitle: Text(
             transactionModel.data,
@@ -26,7 +26,7 @@ class TransItem extends StatelessWidget {
           ),
           trailing: Text(
             transactionModel.price,
-            style: AppStyles.styleSemiBold20(context).copyWith(
+            style: AppStyles.styleSemiBold20.copyWith(
                 color: transactionModel.isWithdrawal
                     ? const Color(0xFFF3735E)
                     : const Color(0xFFF7DD97B)),

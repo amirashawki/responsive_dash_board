@@ -15,14 +15,14 @@ class ItemSection extends StatelessWidget {
           children: [
             Text(
               'Item name',
-              style: AppStyles.styleMedium16(context),
+              style: AppStyles.styleMedium16,
             ),
             SizedBox(
               width: 205,
             ),
             Text(
               'Item mount',
-              style: AppStyles.styleMedium16(context),
+              style: AppStyles.styleMedium16,
             ),
           ],
         ),

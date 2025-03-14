@@ -16,7 +16,7 @@ class LatestTransaction extends StatelessWidget {
       children: [
         Text(
           'Latest Transaction',
-          style: AppStyles.styleMedium16(context),
+          style: AppStyles.styleMedium16,
         ),
         const SizedBox(
           height: 12,
