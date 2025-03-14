@@ -21,14 +21,14 @@ class InActiveItem extends StatelessWidget {
         color: Colors.white,
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ExpensesItemHeader(
               image: expensesItemModel.image,
             ),
-            SizedBox(
+           const SizedBox(
               height: 34,
             ),
             Text(expensesItemModel.title,
@@ -40,7 +40,7 @@ class InActiveItem extends StatelessWidget {
               expensesItemModel.date,
               style: AppStyles.styleRegular14(context),
             ),
-            SizedBox(
+          const  SizedBox(
               height: 16,
             ),
             Text(expensesItemModel.price,
@@ -80,21 +80,21 @@ class ActiveItem extends StatelessWidget {
             ),
             Text(expensesItemModel.title,
                 style: AppStyles.styleSemiBold16(context)
-                    .copyWith(color: Color(0xffFFFFFF))),
+                    .copyWith(color:const Color(0xffFFFFFF))),
             const SizedBox(
               height: 8,
             ),
             Text(
               expensesItemModel.date,
               style: AppStyles.styleRegular14(context)
-                  .copyWith(color: Color(0xffFAFAFA)),
+                  .copyWith(color:const Color(0xffFAFAFA)),
             ),
-            SizedBox(
+          const  SizedBox(
               height: 16,
             ),
             Text(expensesItemModel.price,
                 style: AppStyles.styleSemiBold24(context)
-                    .copyWith(color: Color(0xffFFFFFF))),
+                    .copyWith(color:const Color(0xffFFFFFF))),
           ],
         ),
       ),

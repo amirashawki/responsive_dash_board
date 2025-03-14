@@ -24,14 +24,13 @@ class TransHistoryList extends StatelessWidget {
         isWithdrawal: false),
   ];
   Widget build(BuildContext context) {
-    return ListView.builder(
-        shrinkWrap: true,
-        itemCount: transList.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: TransItem(transactionModel: transList[index]),
-          );
-        });
+    return Column(
+      children: transList
+          .map((e) => Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: TransItem(transactionModel: e),
+              ))
+          .toList(),
+    );
   }
 }

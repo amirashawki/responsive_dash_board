@@ -12,19 +12,19 @@ class SectionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration:const BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.vertical()),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
+      child:const Padding(
+        padding:  EdgeInsets.symmetric(horizontal: 24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SectionOneMycard(),
-            const Divider(
+           SectionOneMycard(),
+           Divider(
               height: 40,
               color: Color(0xffF1F1F1),
             ),
-            const TransactionHistory(),
+         TransactionHistory(),
           ],
         ),
       ),

@@ -13,8 +13,7 @@ class CardSection extends StatelessWidget {
         SizedBox(
           height: 24,
         ),
-       IncomeSection()
-
+        Expanded(child: IncomeSection()),
       ],
     );
   }
