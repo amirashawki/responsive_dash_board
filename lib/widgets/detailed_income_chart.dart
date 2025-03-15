@@ -34,7 +34,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               value: 40,
               showTitle: true,
               titleStyle: AppStyles.styleMedium16
-                  .copyWith(color: activeIndex == 0 ? null : Colors.white),
+                  (context).copyWith(color: activeIndex == 0 ? null : Colors.white),
               title: activeIndex == 0 ? 'Design service' : '40%',
               titlePositionPercentageOffset: activeIndex == 0 ? 1.4 : null,
               color: const Color(0xff208CC8)),
@@ -43,7 +43,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               showTitle: true,
               value: 25,
               titleStyle: AppStyles.styleMedium16
-                  .copyWith(color: activeIndex == 1 ? null : Colors.white),
+                  (context).copyWith(color: activeIndex == 1 ? null : Colors.white),
               title: activeIndex == 1 ? 'Design product' : '25%',
               titlePositionPercentageOffset: activeIndex == 1 ? 2.2 : null,
               color: const Color(0xff4EB7F2)),
@@ -52,7 +52,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               showTitle: true,
               value: 20,
               titleStyle: AppStyles.styleMedium16
-                  .copyWith(color: activeIndex == 2 ? null : Colors.white),
+                  (context).copyWith(color: activeIndex == 2 ? null : Colors.white),
               title: activeIndex == 2 ? 'Product royalti' : '20%',
               titlePositionPercentageOffset: activeIndex == 2 ? 1.4 : null,
               color: const Color(0xff064061)),
@@ -61,7 +61,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
               showTitle: true,
               value: 22,
               titleStyle: AppStyles.styleMedium16
-                  .copyWith(color: activeIndex == 3 ? null : Colors.white),
+                 (context) .copyWith(color: activeIndex == 3 ? null : Colors.white),
               title: activeIndex == 3 ? 'Other' : '22%',
               titlePositionPercentageOffset: activeIndex == 3 ? 1.5 : null,
               color: const Color(0xffE2DECD)),

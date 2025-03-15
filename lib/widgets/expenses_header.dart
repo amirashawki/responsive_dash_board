@@ -12,7 +12,7 @@ class ExpensesHeader extends StatelessWidget {
       children: [
         Text(
           'All Expenses ',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         const Expanded(child: SizedBox()),
         const RangeOptions()
@@ -40,7 +40,7 @@ class RangeOptions extends StatelessWidget {
           children: [
             Text(
               'Monthly',
-              style: AppStyles.styleMedium16,
+              style: AppStyles.styleMedium16(context),
             ),
             const SizedBox(
               width: 18,

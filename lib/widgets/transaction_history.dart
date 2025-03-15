@@ -16,7 +16,7 @@ class TransactionHistory extends StatelessWidget {
         ),
         Text(
           '13 April 2022',
-          style: AppStyles.styleMedium16
+          style: AppStyles.styleMedium16(context)
               .copyWith(color: const Color(0xFFAAAAAA)),
         ),
         const SizedBox(
@@ -38,10 +38,10 @@ class TransactionHistoryHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('Transaction History', style: AppStyles.styleSemiBold20),
+        Text('Transaction History', style: AppStyles.styleSemiBold16(context)),
         Text(
           'See all',
-          style: AppStyles.styleMedium16
+          style: AppStyles.styleMedium16(context)
               .copyWith(color: const Color(0xFF4EB7F2)),
         ),
       ],

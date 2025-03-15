@@ -15,14 +15,14 @@ class CustomerRow extends StatelessWidget {
           children: [
             Text(
               'Customer name',
-              style: AppStyles.styleMedium16,
+              style: AppStyles.styleMedium16(context),
             ),
             SizedBox(
               width: 160,
             ),
             Text(
               'Customer Email',
-              style: AppStyles.styleMedium16,
+              style: AppStyles.styleMedium16(context),
             ),
           ],
         ),

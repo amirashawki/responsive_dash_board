@@ -22,11 +22,11 @@ class InComeItem extends StatelessWidget {
       ),
       title: Text(
         incomeItemModel.title,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         incomeItemModel.value,
-        style: AppStyles.styleSemiBold16,
+        style: AppStyles.styleSemiBold16(context),
       ),
     );
   }
