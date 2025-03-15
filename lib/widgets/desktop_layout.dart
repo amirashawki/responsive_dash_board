@@ -11,6 +11,7 @@ class DesktopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Row(
+     
         children: [
           Expanded(
             child: CustomDrawer(),

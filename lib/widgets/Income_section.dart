@@ -1,15 +1,8 @@
-
-
-
-
-
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/widgets/Custom_Background_Container.dart';
 import 'package:responsive_dash_board/widgets/Income_section_body.dart';
 import 'package:responsive_dash_board/widgets/expenses_header.dart';
-
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -20,6 +13,7 @@ class IncomeSection extends StatelessWidget {
         child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+       
         InComeHeader(),
         SizedBox(
           height: 16,
@@ -37,7 +31,6 @@ class InComeHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [

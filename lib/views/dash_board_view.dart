@@ -21,7 +21,7 @@ class _DashBoardViewState extends State<DashBoardView> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: const Color(0xFFF7F9FA),
-      appBar: MediaQuery.sizeOf(context).width < SizeConfig.tablet
+      appBar: MediaQuery.sizeOf(context).width < 700
           ? AppBar(
               backgroundColor: const Color(0xffFAFAFA),
               leading: IconButton(
@@ -32,7 +32,7 @@ class _DashBoardViewState extends State<DashBoardView> {
               ))
           : null,
       drawer:
-          MediaQuery.sizeOf(context).width < SizeConfig.tablet ? const CustomDrawer() : null,
+          MediaQuery.sizeOf(context).width < 700 ? const CustomDrawer() : null,
       body: AdaptiveLayout(
           mobileLayout: (context) => const MobileDashBoardLayout(),
           tabletLayout: (context) => const TabletLayoutDashboard(),
